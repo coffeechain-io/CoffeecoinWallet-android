@@ -394,7 +394,7 @@ public class MainActivity extends BaseAuthActivity implements TransactionsFragme
         sb.appendLine("Android: ", Build.VERSION.RELEASE);
         sb.appendLine("App version: ", BuildConfig.VERSION_NAME);
         sb.appendLine("");
-        sb.appendLine("Waves address: \n", NodeManager.get().getAddress());
+        sb.appendLine("Coffeecoin address: \n", NodeManager.get().getAddress());
         sb.appendLine("");
         return  sb.toString();
     }

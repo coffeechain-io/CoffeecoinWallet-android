@@ -21,7 +21,7 @@ public class AddressUtilTest {
 
     @Test
     public void parseUri() {
-        String str = "waves://3NCwEeAeVKdPySfsTeAoroPHDUg54mSDY5w?asset=123&amount=5000";
+        String str = "coffeecoin://3NCwEeAeVKdPySfsTeAoroPHDUg54mSDY5w?asset=123&amount=5000";
         URI uri = URI.create(str);
         uri.getHost();
     }

@@ -60,7 +60,7 @@ public class Transaction {
     }
 
     public String getAssetName() {
-        return "WAVES";
+        return "COF";
     }
 
     public Optional<String> getConterParty() {

@@ -11,7 +11,7 @@ public class PlaceOrderModel extends BaseObservable {
     private AssetPair assetPair;
     private double price;
     private boolean dontAskAgain = false;
-    public static final String sWAVES = "WAVES";
+    public static final String sWAVES = "COF";
 
     public WatchMarket getWatchMarket() {
         return watchMarket;

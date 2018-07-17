@@ -27,7 +27,7 @@ public class TransferTransaction extends Transaction {
 
     @Override
     public String getAssetName() {
-        return assetId != null ? NodeManager.get().getAssetName(assetId) : "WAVES";
+        return assetId != null ? NodeManager.get().getAssetName(assetId) : "COF";
     }
 
     @Override

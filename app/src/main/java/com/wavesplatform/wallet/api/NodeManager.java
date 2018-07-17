@@ -90,7 +90,7 @@ public class NodeManager {
         issueTransaction = new IssueTransaction();
         issueTransaction.decimals = 8;
         issueTransaction.quantity = quantity;
-        issueTransaction.name = "WAVES";
+        issueTransaction.name = "COF";
     }};
 
     private List<Transaction> filterOwnTransactions(List<Transaction> txs) {

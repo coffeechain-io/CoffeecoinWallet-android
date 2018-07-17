@@ -30,7 +30,7 @@ import io.realm.RealmResults;
 @SuppressWarnings("WeakerAccess")
 public class AddMarketViewModel extends BaseViewModel {
 
-    public static final String WAVES = "WAVES";
+    public static final String COF = "COF";
     @Thunk
     DataListener dataListener;
 
@@ -88,13 +88,13 @@ public class AddMarketViewModel extends BaseViewModel {
         dataListener.showProgressDialog(R.string.please_wait, "...");
         compositeDisposable.add(MatherManager.get().getOrderBook(amountAsset, priceAsset)
                 .flatMap(orderBook -> {
-                    if (orderBook.pair.amountAsset.trim().equals(WAVES)) {
-                        return Observable.zip(Observable.just(new TransactionsInfo(WAVES, WAVES, 8)),
+                    if (orderBook.pair.amountAsset.trim().equals(COF)) {
+                        return Observable.zip(Observable.just(new TransactionsInfo(COF, COF, 8)),
                                 NodeManager.get().getTransactionsInfo(orderBook.pair.priceAsset),
                                 (BiFunction<TransactionsInfo, TransactionsInfo, Pair>) Pair::new);
-                    } else if (orderBook.pair.priceAsset.trim().equals(WAVES)) {
+                    } else if (orderBook.pair.priceAsset.trim().equals(COF)) {
                         return Observable.zip(NodeManager.get().getTransactionsInfo(orderBook.pair.amountAsset),
-                                Observable.just(new TransactionsInfo(WAVES, WAVES, 8)),
+                                Observable.just(new TransactionsInfo(COF, COF, 8)),
                                 (BiFunction<TransactionsInfo, TransactionsInfo, Pair>) Pair::new);
                     } else {
                         return Observable.zip(NodeManager.get().getTransactionsInfo(orderBook.pair.amountAsset),

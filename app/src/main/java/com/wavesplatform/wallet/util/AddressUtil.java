@@ -64,7 +64,7 @@ public class AddressUtil {
     }
 
     public static boolean isWavesUri(String uri) {
-        return uri.startsWith("waves://");
+        return uri.startsWith("coffeecoin://");
     }
 
     public static String generateReceiveUri(long amount, AssetBalance ab, String attachment) {
@@ -74,7 +74,7 @@ public class AddressUtil {
         if (attachment != null && !attachment.isEmpty()) params.add("attachment=" + attachment);
 
         String paramsText = TextUtils.join("&", params);
-        return "waves://" + NodeManager.get().getAddress() + (paramsText.isEmpty() ? "" : "?" + paramsText);
+        return "coffeecoin://" + NodeManager.get().getAddress() + (paramsText.isEmpty() ? "" : "?" + paramsText);
     }
 
 }

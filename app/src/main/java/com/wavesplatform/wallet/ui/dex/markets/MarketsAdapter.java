@@ -18,7 +18,7 @@ public class MarketsAdapter extends BaseQuickAdapter<Market, BaseViewHolder> {
     ArrayList<Market> allData = new ArrayList();
     public ArrayList<Market> currentData = new ArrayList();
     Map<String, String> verifiedAssets = new HashMap<>();
-    String WAVES = "WAVES";
+    String COF = "COF";
     private Handler mHandler = new Handler();
     private boolean showUnVerifiedAssets = false;
 
@@ -52,8 +52,8 @@ public class MarketsAdapter extends BaseQuickAdapter<Market, BaseViewHolder> {
         if (assetIsVerified(market.amountAsset) != null) imageAmount.setImageResource(R.drawable.ic_verified);
         if (assetIsVerified(market.priceAsset) != null) imagePrice.setImageResource(R.drawable.ic_verified);
 
-        if (market.priceAssetName.equals(WAVES)) imagePrice.setImageResource(R.drawable.ic_color_logo);
-        if (market.amountAssetName.equals(WAVES)) imageAmount.setImageResource(R.drawable.ic_color_logo);
+        if (market.priceAssetName.equals(COF)) imagePrice.setImageResource(R.drawable.ic_color_logo);
+        if (market.amountAssetName.equals(COF)) imageAmount.setImageResource(R.drawable.ic_color_logo);
 
         if (imageAmount.getDrawable() == null) imageAmount.setVisibility(View.GONE);
         else imageAmount.setVisibility(View.VISIBLE);

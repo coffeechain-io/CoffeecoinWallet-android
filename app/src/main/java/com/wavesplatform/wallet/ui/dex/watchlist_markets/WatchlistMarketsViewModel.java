@@ -33,7 +33,7 @@ public class WatchlistMarketsViewModel extends BaseViewModel {
     @Thunk
     DataListener dataListener;
     private Context context;
-    public final String defaultAmount = "WAVES";
+    public final String defaultAmount = "COF";
     public final String defaultPrice = "8LQW8f7P5d5PZM7GtZEBgaqRPGSzS3DfPuiXrURJ4AJS";
     private Market defaultMarket;
 

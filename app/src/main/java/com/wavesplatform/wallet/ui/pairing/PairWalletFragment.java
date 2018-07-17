@@ -22,7 +22,7 @@ import com.wavesplatform.wallet.util.AppUtil;
 import com.wavesplatform.wallet.util.PermissionUtil;
 
 public class PairWalletFragment extends Fragment implements FragmentCompat.OnRequestPermissionsResultCallback {
-    public static final String LITE_WALLET_URL ="https://waveswallet.io";
+    public static final String LITE_WALLET_URL ="https://coffeecoin.io";
 
     private FragmentPairWalletBinding binding;
 

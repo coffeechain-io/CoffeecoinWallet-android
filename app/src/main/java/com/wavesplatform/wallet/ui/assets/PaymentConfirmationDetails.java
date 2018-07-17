@@ -33,7 +33,7 @@ public class PaymentConfirmationDetails {
         d.amount = MoneyUtil.getScaledText(req.amount, ab);
         d.fee = MoneyUtil.getDisplayWaves(req.fee);
         d.amountUnit = ab.getName();
-        d.feeUnit = "WAVES";
+        d.feeUnit = "COF";
         return d;
 
     }

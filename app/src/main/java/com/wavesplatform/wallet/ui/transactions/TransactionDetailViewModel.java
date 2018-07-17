@@ -108,7 +108,7 @@ public class TransactionDetailViewModel extends BaseViewModel {
     @Bindable
     public String getTransactionFee() {
         return mStringUtils.getString(R.string.transaction_detail_fee) +
-                MoneyUtil.getWavesStripZeros(mTransaction.fee) + " WAVES";
+                MoneyUtil.getWavesStripZeros(mTransaction.fee) + " COF";
     }
 
     @Bindable
