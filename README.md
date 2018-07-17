@@ -1,2 +1,2 @@
-# WavesWallet-android
-Waves Wallet on Android
+# CoffeecoinWallet-android
+Coffeecoin Wallet on Android
